@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="1.png">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+</head>
+<style>
+  *
+{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Inconsolata', monospace;
+}
+body
+{
+  background-color: rgba(20, 20, 20, 0.793);
+}
+header
+{
+    text-align: center;
+    position: sticky;
+    top: 0%;
+    z-index: 5;
+}
+.navbar-brand a:active
+{
+    color: aqua;
+}
+.navbar a
+{
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+.navbar a:hover
+{
+    color: orange;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.heading
+{
+    margin-top: 50px;
+    padding: 30px;
+    color: white;
+    transition-property: all;
+    transition-timing-function: ease-in;
+    transition-duration: 2s;
+}
+.heading h1
+{
+    font-size: 60px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.heading p
+{
+    font-size: 20px;
+}
+.heading p a
+{
+    text-decoration: none;
+    color: orange;
+}
+form
+{
+    padding: 30px;
+}
+.mb-3 label
+{
+    color: white;
+}
+#color
+{
+    color: orange;
+}
+</style>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Work.html">Work</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="contact.html" id="contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="heading">
+            <h1>Let's talk</h1>
+            <p>Get in touch via the form below, or by emailing <a href="mailto:kasparpanmeibboy@gmail.com"> kasparpanmeibboy@gmail.com</a></p>
+        </div>
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Name</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">E-mail Address</label>
+              <input type="email" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            <button type="submit" class="btn btn-dark" id="color">Submit</button>
+          </form>
+    </main>
+    
+</body>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</html>
